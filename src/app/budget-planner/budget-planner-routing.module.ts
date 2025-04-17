@@ -8,7 +8,6 @@ import { ExpenseComponent } from './expense/expense.component';
 import { TodoComponent } from './todo/todo.component';
 import { HistoryComponent } from './history/history.component';
 import { ProfileComponent } from './profile/profile.component';
-import { NotfoundComponent } from '../notfound/notfound.component';
 
 const routes: Routes = [
   {
@@ -24,14 +23,7 @@ const routes: Routes = [
   {path:'todo',component:TodoComponent},
   {path:'history',component:HistoryComponent},
   {path:'profile',component:ProfileComponent},
-  { 
-    path: '404', 
-    component: NotfoundComponent 
-  },
-  { 
-    path: '**', 
-    redirectTo: '/404' 
-  }
+ 
 ];
 
 @NgModule({
